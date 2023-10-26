@@ -1,0 +1,23 @@
+Package: haR
+Type: Package
+Title: Heterogeneous AutoRegressive (HAR) model
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Daniele",
+             family = "Girolimetto",
+             role = c("aut", "cre", "fnd"),
+             email = "daniele.girolimetto@phd.unipd.it",
+             comment = c(ORCID = "0000-0001-9387-1232")))
+Description: Tools for estimating and forecasting using the Heterogeneous AutoRegressive (HAR) model
+    by Corsi (2009) <doi:10.1093/jjfinec/nbp001> and the Partial-Variances Heterogeneous 
+    AutoRegressive model by Bollerslev et al. (2022) <doi:10.1016/j.jeconom.2021.04.013>.
+Depends: R (>= 2.10)
+Imports: 
+    RcppRoll,
+    stats,
+    methods
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://github.com/daniGiro/harmod
+BugReports: https://github.com/daniGiro/harmod/issues

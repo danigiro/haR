@@ -1,0 +1,48 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Heterogeneous AutoRegressive (HAR) model
+
+<!-- badges: start -->
+<!-- [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental) -->
+[![CRAN status](https://www.r-pkg.org/badges/version/harmod)](https://CRAN.R-project.org/package=harmod)
+[![devel version](https://img.shields.io/badge/devel%20version-0.1.0-blue.svg)](https://github.com/daniGiro/harmod)
+<!-- badges: end -->
+
+Tools for estimating and forecasting using the Heterogeneous AutoRegressive (HAR) model by Corsi (2009) [<doi:10.1093/jjfinec/nbp001>](https://doi.org/10.1093/jjfinec/nbp001) and the Partial-Variances Heterogeneous AutoRegressive model by Bollerslev et al. (2022) [<doi:10.1016/j.jeconom.2021.04.013>](https://doi.org/10.1016/j.jeconom.2021.04.013).
+
+## Installation
+
+You can install the development version of harmod from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("daniGiro/harmod")
+```
+
+## Example
+
+```{r example}
+library(harmod)
+x <- rnorm(1000)
+obj <- har(x)
+summary(obj)
+
+#coef(obj)
+#print(obj)
+#fitted(obj)
+#residuals(obj)
+#predict(obj)
+```
